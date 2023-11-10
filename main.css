@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en");
+body {
+    background-image: linear-gradient(90deg, rgb(25, 25, 25), rgb(40, 40, 40));
+}
+
+.game-options{
+    display: flex;
+    border: 5px solid;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    width: 700px;
+    height: 500px;
+    border-color: rgb(25, 25, 25);
+    
+}
+.instructions{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -10%);
+}
+.result{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+button {
+    border: 2px solid;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 60px;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 100%);
+    background-size: 100% 0%; 
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+button:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    background-size: 101% 101%;
+}
+button:hover{
+    color: black;
+}
