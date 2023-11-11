@@ -7,18 +7,51 @@
     </head>
     
     <body>
+        <button id="menu-button" onclick="menu()"><svg viewBox="0 0 10 10"
+            height="10"
+            width="10"
+            role="img"
+            class="svg-icon"
+            focusable="false">
+           <path stroke="#FFFFFF"d="m1,9 h8 v1 h-8 z m0,-3 h8 v1 h-8 z m0,-3 h8 v1 h-8z"/>
+           </svg>
+           Menu
+        </button>
+        <div class="menu">
+            <button id="rps"><svg id="icon" viewBox="0 0 10 10"xml:space="preserve"
+                height="40"
+                width="50"
+                role="img"
+                class="svg-icon"
+                focusable="false">
+               <path stroke="#FFFFFF"d="
+               m2,2 h3 v2 h-3 v-2
+               m4.8,5.1 l.4,-2 l.4,2
+               "fill="none"stroke-width=".35px"/>
+               <ellipse cx="6.65" cy="4.4" rx=".7" ry=".85"
+                fill="none"stroke="white"stroke-width=".35px" />
+                <ellipse cx="7.9" cy="4.4" rx=".6" ry=".7"
+                fill="none"stroke="white"stroke-width=".35px" />
+                <ellipse cx="3.2" cy="6.9" rx="1.5" ry="1.5"
+                fill="none"stroke="white"stroke-width=".35px" />
+            </svg>
+               Rock Paper Scissors
+            </button>
+        </div>
         <div class="game-options" id="centered">
             <h1 class="instructions">Choose one!</h1>
-            <button class="rock" onclick="button(0)">rock</button>
-            <button class="paper" onclick="button(1)">paper</button>
-            <button class="scissors" onclick="button(2)">scissors</button>
+            <button class="option rock" onclick="button(0)">rock</button>
+            <button class="option paper" onclick="button(1)">paper</button>
+            <button class="option scissors" onclick="button(2)">scissors</button>
             <h1 id="result" class="result"></h1>
         </div>
-        
     </body>
     <script>
         let answer = Math.floor(Math.random() * 3); //zero is rock, one is paper, two is scissors
         let result = document.getElementById('result');
+        function menu(){
+            console.log('foo');
+        }
         function button(num){
             console.log('clicked');
             if(num == answer){
