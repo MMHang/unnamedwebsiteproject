@@ -86,8 +86,19 @@ body {
 }
 
 #icon {
-    margin-right: 10px;
     vertical-align: middle;
+}
+.menu{
+    width: 0px;
+    padding: 5px 5px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(47, 47, 47);
+    overflow-x: hidden;
+    transition: .3s;
+    z-index: 2;
 }
 .option:hover{
     transform: translateY(-10px);

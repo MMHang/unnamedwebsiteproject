@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>title</title>
-        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="rps.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     </head>
     
@@ -18,7 +18,7 @@
            Menu
         </button>
         <div class="menu">
-            <button id="rps"><svg id="icon" viewBox="0 0 10 10"xml:space="preserve"
+            <button id="rps" onclick="redirect('rps.html')"><svg id="icon" viewBox="0 0 10 10"xml:space="preserve"
                 height="40"
                 width="50"
                 role="img"
@@ -35,7 +35,7 @@
                 <ellipse cx="3.2" cy="6.9" rx="1.5" ry="1.5"
                 fill="none"stroke="white"stroke-width=".35px" />
             </svg>
-               Rock Paper Scissors
+            Rock paper scissors
             </button>
         </div>
         <div class="game-options" id="centered">
@@ -49,8 +49,19 @@
     <script>
         let answer = Math.floor(Math.random() * 3); //zero is rock, one is paper, two is scissors
         let result = document.getElementById('result');
+        let menuopened = false;
+        function redirect(url){
+            window.location.href = '/' + url;
+        }
         function menu(){
-            console.log('foo');
+            let menu = document.getElementsByClassName('menu')[0];
+            if(!menuopened){
+                menu.style.width = '175px';
+                menuopened = true;
+            } else {
+                menu.style.width = '0px';
+                menuopened = false;
+            }
         }
         function button(num){
             console.log('clicked');
