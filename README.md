@@ -1,4 +1,5 @@
-# rockpaperscissors
-rock paper scissors duh
+# website
+website i made for various stuff i.e. games
 # features
-what do you think?
+-rock paper scissors
+thats it for now
