@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en");
+body{
+    background-color: rgb(32.5, 32.5, 32.5);
+}
+@keyframes upndownrbw {
+    0% {color: red;}
+    10% {color: orange;}
+    20% {color: yellow;}
+    30% {color: rgb(140, 255, 0);}
+    40% {color: rgb(0, 226, 120);}
+    50% {color: rgb(12, 248, 181);}
+    60% {color: turquoise;}
+    70% {color: rgb(0, 64, 255);}
+    80% {color: rgb(255, 0, 255)}
+    90% {color: rgb(255, 0, 166)}
+    100% {color: rgb(255, 0, 43)}
+    0% {transform: translateY(-15px)}
+    25% {transform: translateY(15px);}
+    50% {transform: translateY(-15px);}
+    75% {transform: translateY(15px);}
+    100% {transform: translateY(-15px);}
+}
+.main-container{
+    display: flex;
+    border: 5px solid;
+    position: absolute;
+    text-align: top;
+    align-items: top;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 25);
+    border-color: rgb(25, 25, 25);
+}
+.main-header {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+}
+.floating-container {
+    position: absolute;
+    top: 22.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.floating { 
+    display: inline-block;
+    animation-name: upndownrbw;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    white-space: nowrap;
+    font-size: 100px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+.floating:nth-child(1){
+    animation-delay: 0s;
+}
+.floating:nth-child(2){
+    animation-delay: 0.1s;
+}
+.floating:nth-child(3){
+    animation-delay: 0.2s;
+}
+.floating:nth-child(4){
+    animation-delay: 0.3s;
+}
+.floating:nth-child(5){
+    animation-delay: 0.4s;
+}
+.floating:nth-child(6){
+    animation-delay: 0.5s;
+}
+.floating:nth-child(7){
+    animation-delay: 0.6s;
+}
+.floating:nth-child(8){
+    animation-delay: .7s;
+}

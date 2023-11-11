@@ -18,7 +18,7 @@
            Menu
         </button>
         <div class="menu">
-            <button id="rps" onclick="redirect('rps.html')"><svg id="icon" viewBox="0 0 10 10"xml:space="preserve"
+            <button id="rps" onclick="window.location.href = './rps.html'"><svg id="icon" viewBox="0 0 10 10"xml:space="preserve"
                 height="40"
                 width="50"
                 role="img"
@@ -46,43 +46,6 @@
             <h1 id="result" class="result"></h1>
         </div>
     </body>
-    <script>
-        let answer = Math.floor(Math.random() * 3); //zero is rock, one is paper, two is scissors
-        let result = document.getElementById('result');
-        let menuopened = false;
-        function redirect(url){
-            window.location.href = '/' + url;
-        }
-        function menu(){
-            let menu = document.getElementsByClassName('menu')[0];
-            if(!menuopened){
-                menu.style.width = '175px';
-                menuopened = true;
-            } else {
-                menu.style.width = '0px';
-                menuopened = false;
-            }
-        }
-        function button(num){
-            console.log('clicked');
-            if(num == answer){
-                result.innerHTML = "It's a tie!";
-                console.log('tied');
-            } else if((num == 0 && answer == 2) || (num == 1 && answer == 0) || (num == 2 && answer == 1)){
-                result.innerHTML = "You win!";
-                console.log('win');
-            } else {
-                result.innerHTML = "You lose!";
-                console.log('lose');
-            }
-            if(answer == 0){
-                result.innerHTML = result.innerHTML + ' I chose rock!'
-            } else if(answer == 1) {
-                result.innerHTML = result.innerHTML + ' I chose paper!'
-            } else {
-                result.innerHTML = result.innerHTML + ' I chose scissors!'
-            }
-            answer = Math.floor(Math.random() * 3); //reset the game
-        }
-    </script>
+    <script src="../menu.js"></script>
+    <script src="./rps.js"></script>
 </html>
