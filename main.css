@@ -91,7 +91,7 @@ body {
 }
 .option:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px rgba(255, 255, 254, 1);
     background-size: 101% 101%;
 }
 .option:hover{
