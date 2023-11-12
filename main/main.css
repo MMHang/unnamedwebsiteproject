@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en");
 body{
+    padding: 0px;
+    margin: 0px;
+}
+.background{
     background-color: rgb(32.5, 32.5, 32.5);
+    width: 100%;
+    z-index: 0;
+    height: 750px;
+    display: block;
+    position: relative;
+    height: 650px;
+    width: 100%;
+    transform: scale(1, 1);
 }
 @keyframes upndownrbw {
     0% {color: red;}
@@ -49,6 +61,25 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+.curve {
+    fill: rgb(32.5, 32.5, 32.5);
+}
+.sub-container{
+    background-color: rgb(50, 50, 50);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4px;
+}
+p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+a{
+    color: rgb(165, 165, 165);
+    text-decoration: none;
 }
 .floating { 
     display: inline-block;
